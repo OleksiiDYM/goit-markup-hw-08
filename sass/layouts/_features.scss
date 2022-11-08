@@ -1,11 +1,13 @@
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 .features__list {
   display: flex;
   gap: 30px;
 }
-
+.features__block {
+  width: 100%;
+}
 .features__main {
   font-weight: 700;
   font-size: 14px;

@@ -20,6 +20,9 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 body {
@@ -33,6 +36,11 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @font-face {
@@ -61,10 +69,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .modal {
@@ -299,6 +322,7 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+  widows: 100%;
 }
 
 .menu {
@@ -423,7 +447,7 @@ body {
 }
 
 .hero,
-.hhero__btn {
+.hero__btn {
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -468,12 +492,16 @@ body {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .features__list {
   display: flex;
   gap: 30px;
+}
+
+.features__block {
+  width: 100%;
 }
 
 .features__main {
