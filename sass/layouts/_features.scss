@@ -1,0 +1,35 @@
+.features {
+  padding-top: 94px;
+}
+.features__list {
+  display: flex;
+  gap: 30px;
+}
+
+.features__main {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--font-black);
+}
+.features__item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--font-grey);
+  min-width: 270px;
+}
+.features__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+}
