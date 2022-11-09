@@ -3,7 +3,18 @@
 }
 .features__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+.features__block {
+  margin-bottom: 30px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .features__main {
@@ -29,7 +40,8 @@
   gap: 30px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
-  width: 270px;
+  // width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
 }
