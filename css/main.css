@@ -22,7 +22,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -322,7 +321,6 @@ body {
 .header__container {
   display: flex;
   align-items: center;
-  widows: 100%;
 }
 
 .menu {
@@ -498,10 +496,6 @@ body {
 .features__list {
   display: flex;
   gap: 30px;
-}
-
-.features__block {
-  width: 100%;
 }
 
 .features__main {
