@@ -25,6 +25,10 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--font-black);
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .features__item {
   font-size: 14px;

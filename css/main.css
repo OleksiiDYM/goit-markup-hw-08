@@ -535,6 +535,12 @@ body {
   margin-bottom: 10px;
   color: var(--font-black);
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .features__main {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .features__item {
   font-size: 14px;
@@ -614,12 +620,18 @@ body {
 
 .team-maintext {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--font-black);
   margin-bottom: 50px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .team-maintext {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-toptext {
@@ -704,17 +716,29 @@ body {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-maintext {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 0.85;
+  font-size: 28px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .clients-maintext {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients-logo {
@@ -745,6 +769,7 @@ body {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }

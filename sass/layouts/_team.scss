@@ -10,8 +10,14 @@
 }
 .team-maintext {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  // font-size: 36px;
+  // line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.14;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
   letter-spacing: 0.03em;
   color: var(--font-black);
   margin-bottom: 50px;
