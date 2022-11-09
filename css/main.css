@@ -489,8 +489,8 @@ body {
 
 .hero__text {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -499,6 +499,12 @@ body {
   margin-left: auto;
   max-width: 696px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .features {
@@ -757,6 +763,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .clients-logo {
+    width: 100%;
+  }
+}
 .clients-logo:hover, .clients-logo:focus {
   background-color: #ffffff;
   color: var(--button-color);
@@ -772,6 +783,18 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  widows: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .footer {
