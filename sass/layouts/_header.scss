@@ -7,6 +7,14 @@
 .header__container {
   display: flex;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet {
+    padding: 0;
+  }
+  @include desktop {
+    padding: 0;
+  }
 }
 .menu {
   display: none;
@@ -123,7 +131,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
 .hdr-tel {
   display: flex;
   justify-content: center;
@@ -147,35 +154,32 @@
   margin-left: auto;
   border: none;
   background-color: transparent;
+  cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     display: none;
   }
   &:hover,
   &:focus {
-    fill: var(--button-color);
+    fill: $accent-active;
   }
 }
 .menu-close-btn {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   background-color: transparent;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  fill: currentColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
-    color: var(--button-color);
+    fill: $accent-active;
   }
+}
+.menu-close-icon {
+  width: 24px;
+  height: 16px;
 }
 .is-hidden {
   opacity: 0;

@@ -1,6 +1,10 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team-list {
   display: flex;
@@ -14,13 +18,14 @@
   // line-height: 1.17;
   font-size: 28px;
   line-height: 1.14;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
   letter-spacing: 0.03em;
   color: var(--font-black);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -41,9 +46,13 @@
   text-align: center;
 }
 .team1 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   width: 100%;
+  @include desktop {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .soc-link {
   width: 44px;
