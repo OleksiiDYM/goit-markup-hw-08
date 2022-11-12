@@ -163,6 +163,7 @@
   @include desktop {
     flex-direction: row;
     gap: 12px;
+    align-items: baseline;
   }
 }
 

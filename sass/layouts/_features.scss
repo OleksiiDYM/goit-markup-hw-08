@@ -1,5 +1,8 @@
 .features {
   padding-top: 60px;
+  @include desktop {
+    padding-top: 94px;
+  }
 }
 .features__list {
   display: flex;
