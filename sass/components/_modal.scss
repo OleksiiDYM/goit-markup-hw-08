@@ -1,6 +1,6 @@
 .modal {
-  width: 450px;
-  min-height: 609px;
+  width: 300px;
+  padding: 35px 20px;
   background-color: #ffffff;
   position: absolute;
   top: 50%;
@@ -12,12 +12,13 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  @media screen and (min-width: 768px) {
+
+  @include mobile {
     padding: 40px;
     width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 528px;
     min-height: 581px;
   }
@@ -54,15 +55,23 @@
   pointer-events: none;
 }
 .modal-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+
+  @include mobile {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
+    //margin-top: 40px;
+    justify-content: center;
+  }
 }
 .modal-input {
   box-sizing: border-box;
@@ -77,6 +86,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   & {
     outline-color: var(--button-color);
+  }
+
+  @include mobile {
+    padding: 11px;
   }
 }
 
@@ -130,33 +143,55 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  @include mobile {
+    height: 120px;
+  }
+}
+.modal-field {
+  padding-top: 10px;
+  @include mobile {
+    padding-top: 20px;
+  }
 }
 
 .check-text {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 7px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  // margin-top: 20px;
   margin-bottom: 30px;
+
+  @include mobile {
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+    justify-content: center;
+  }
 }
 .license {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 9px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   text-decoration-thickness: from-font;
   color: #2196f3;
-  margin-left: 3px;
+  margin-left: 5px;
+
+  @include mobile {
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+  }
 }
 .check-text span {
   width: 16px;
@@ -185,8 +220,6 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
