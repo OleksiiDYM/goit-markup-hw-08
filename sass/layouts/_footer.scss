@@ -2,10 +2,43 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @include desktop {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+  }
 }
 .ftr-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  text-align: center;
+
+  @include desktop {
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+.footer__top {
+  display: block;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .footer-map {
@@ -29,20 +62,18 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .ftr-logo {
-  margin-bottom: 20px;
-  flex-direction: column;
+  display: block;
+
+  @include desktop {
+    text-align: left;
+  }
 }
 .footer-item {
   margin-top: 9px;
   margin-bottom: 9px;
 }
 .footer-soctext {
-  width: 116px;
-  height: 16px;
-  left: 516px;
-  top: 2748px;
-  font-family: 'Roboto';
-  font-style: normal;
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 0.87;
@@ -50,10 +81,15 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @include desktop {
+    text-align: left;
+  }
 }
 .footer-soc {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .footer-link {
   width: 44px;
@@ -67,7 +103,16 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social {
-  margin-left: 70px;
+  display: block;
+  margin: 60px 0;
+
+  @include tablet {
+    margin: 0;
+    margin-top: 8px;
+  }
+  @include desktop {
+    margin-left: 70px;
+  }
 }
 
 .footer-socitem :hover,
@@ -76,11 +121,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe {
-  margin-left: 93px;
-}
+// .subscribe {
+//   margin-left: 93px;
+// }
 .subscribe-input {
   box-sizing: border-box;
+  padding: 15px 16px;
   margin-bottom: 10px;
   margin-right: 12px;
   width: 358px;
@@ -101,15 +147,27 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  @include mobile {
+    width: 450px;
+  }
+
+  @include desktop {
+    width: 358px;
+  }
 }
 .subscribe-button {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .subscribe-text {
-  font-family: 'Roboto';
-  font-style: normal;
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -117,6 +175,14 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    text-align: left;
+    display: flex;
+  }
 }
 .subscribe-btn {
   width: 200px;
