@@ -96,7 +96,10 @@
 .connect__tel {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
+  @include desktop {
+    font-size: 14px;
+  }
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -115,7 +118,10 @@
 
 .connect__email {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
+  @include desktop {
+    font-size: 14px;
+  }
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -133,7 +139,7 @@
 }
 .hdr-tel {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
   width: 142px;

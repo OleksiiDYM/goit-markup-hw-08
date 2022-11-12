@@ -633,7 +633,7 @@ body {
 .connect__tel {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -642,6 +642,11 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .connect__tel {
+    font-size: 14px;
+  }
 }
 .connect__tel:hover, .connect__tel:focus {
   color: var(--button-color);
@@ -651,7 +656,7 @@ body {
 
 .connect__email {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -661,6 +666,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .connect__email {
+    font-size: 14px;
+  }
+}
 .connect__email:hover, .connect__email:focus {
   color: var(--button-color);
   transition-duration: 250ms;
@@ -669,7 +679,7 @@ body {
 
 .hdr-tel {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
   width: 142px;
